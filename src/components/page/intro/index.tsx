@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import UserInfoForm from '@/components/organism/userInfoForm';
+import UserInfoForm from '@/components/organisms/userInfoForm';
 import { setCookieCustom } from '@/lib/cookieCustom';
 import { useRouter } from 'next/navigation';
 

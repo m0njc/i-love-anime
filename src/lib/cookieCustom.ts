@@ -9,3 +9,10 @@ export async function setCookieCustom(user: User) {
   const cookie = cookies();
   cookie.set("userDetail", JSON.stringify(obj));
 }
+
+
+
+
+
+
+          

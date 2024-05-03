@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import UserInfoForm from '@/components/organism/userInfoForm';
+import UserInfoForm from '@/components/organisms/userInfoForm';
 import { useDispatch } from 'react-redux';
 import { userActions } from '@/lib/usersSlice';
 

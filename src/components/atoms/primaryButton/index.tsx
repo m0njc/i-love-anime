@@ -5,13 +5,13 @@ import { text } from 'stream/consumers';
 const PrimaryButton: React.FC<{
     btnText: string;
     }> = ({btnText}) => {
-  return (
+      return (
     
-          <Button bgGradient='linear(to-l, #7928CA, #FF0080)'colorScheme="white" >
-            {btnText}
-          </Button>
-  );
-};
+        <Button bgGradient='linear(to-l, #7928CA, #FF0080)'colorScheme="white" >
+          {btnText}
+        </Button>
+      );
+    };
 
 export default PrimaryButton;
 

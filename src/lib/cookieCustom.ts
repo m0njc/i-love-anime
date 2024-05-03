@@ -1,6 +1,6 @@
 'use server'
 
-import { User } from "@/domains/User";
+import { User } from "@/app/model/User";
 import { cookies } from "next/headers";
 
  

@@ -1,6 +1,6 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import {RootState} from "./store";
-import {User} from "../domains/User";
+import {User} from "../app/model/User";
 
 export const USER_SLICE_NAME = 'user';
 
@@ -10,8 +10,8 @@ export interface UserState {
 }
 
 const initialUserState: UserState = {
-    userName: '',
-    jobTitle: '',
+  userName: '',
+  jobTitle: '',
 }
 const usersSlice = createSlice({
   name: USER_SLICE_NAME,

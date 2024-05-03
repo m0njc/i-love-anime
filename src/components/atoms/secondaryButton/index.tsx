@@ -5,13 +5,13 @@ import { text } from 'stream/consumers';
 const SecondaryButton: React.FC<{
     btnText: string;
     }> = ({btnText}) => {
-  return (
+      return (
     
-          <Button borderColor="purple" colorScheme='black'>
-            {btnText}
-          </Button>
-  );
-};
+        <Button borderColor="purple" colorScheme='black'>
+          {btnText}
+        </Button>
+      );
+    };
 
 export default SecondaryButton;
 

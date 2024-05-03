@@ -19,12 +19,12 @@ const UserIntroPage: React.FC = () => {
 
   return (
     <UserInfoForm
-        headerText='Hello! Intro please...'
-        handleSubmit={handleSubmit}
-        userName={userName}
-        setUserNameState={setUserNameState}
-        jobTitle={jobTitle}
-        setJobTitleState={setJobTitleState}    
+      headerText='Hello! Intro please...'
+      handleSubmit={handleSubmit}
+      userName={userName}
+      setUserNameState={setUserNameState}
+      jobTitle={jobTitle}
+      setJobTitleState={setJobTitleState}    
     />
   );
 };

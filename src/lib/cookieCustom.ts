@@ -8,3 +8,8 @@ export async function setCookieCustom(user: User) {
     const cookie = cookies()
     cookie.set('userDetail', JSON.stringify(obj))
 }
+
+export async function getCookieCustom(): Promise<User> {
+    const cookie: string | undefined = cookies().get('userDetail')?.value
+    return cookie && JSON.parse(cookie)
+}

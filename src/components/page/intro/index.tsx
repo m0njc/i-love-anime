@@ -1,13 +1,12 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import UserInfoForm from '@/components/organisms/userInfoForm'
 import { setCookieCustom } from '@/lib/cookieCustom'
 import { useRouter } from 'next/navigation'
 
-const UserIntroPage: React.FC = () => {
+const UserIntroPage: React.FC = async () => {
     const router = useRouter()
-
     const [userName, setUserNameState] = useState('')
     const [jobTitle, setJobTitleState] = useState('')
 

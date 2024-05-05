@@ -8,9 +8,9 @@ import { TypedDocumentNode, gql } from '@apollo/client'
 import { useSuspenseQuery } from '@apollo/experimental-nextjs-app-support/ssr'
 import { SimpleGrid, Box } from '@chakra-ui/react'
 import { useSearchParams } from 'next/navigation'
-import React from 'react'
+import React, { Suspense } from 'react'
 
-const ContentLayout: React.FC = () => {
+const MainContentLayout: React.FC = () => {
     const urlParams = useSearchParams()
 
     const pageNumber = urlParams.get('page')
@@ -53,5 +53,14 @@ const ContentLayout: React.FC = () => {
         </Box>
     )
 }
+
+const ContentLayout: React.FC = () => {
+  return (
+    <Suspense>
+      <MainContentLayout />
+    </Suspense>
+  )
+}
+
 
 export default ContentLayout

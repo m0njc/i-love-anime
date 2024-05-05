@@ -55,12 +55,11 @@ const MainContentLayout: React.FC = () => {
 }
 
 const ContentLayout: React.FC = () => {
-  return (
-    <Suspense>
-      <MainContentLayout />
-    </Suspense>
-  )
+    return (
+        <Suspense>
+            <MainContentLayout />
+        </Suspense>
+    )
 }
-
 
 export default ContentLayout

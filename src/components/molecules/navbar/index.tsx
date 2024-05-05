@@ -1,14 +1,22 @@
 'use client'
 
-import { Box, Heading, Button, Spacer, Flex, Menu, MenuButton } from '@chakra-ui/react'
-import { useRouter } from 'next/navigation';
+import {
+    Box,
+    Heading,
+    Button,
+    Spacer,
+    Flex,
+    Menu,
+    MenuButton,
+} from '@chakra-ui/react'
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
 const Navbar: React.FC = () => {
-    const router = useRouter();
+    const router = useRouter()
     const handleClick = (e: React.FormEvent) => {
         e.preventDefault()
-        router.push('/update');
+        router.push('/update')
     }
 
     return (
@@ -21,10 +29,10 @@ const Navbar: React.FC = () => {
             <Spacer />
 
             <Menu>
-  <MenuButton as={Button} onClick={handleClick}>
-  Update my profile
-  </MenuButton>
-</Menu>
+                <MenuButton as={Button} onClick={handleClick}>
+                    Update my profile
+                </MenuButton>
+            </Menu>
         </Flex>
     )
 }

@@ -1,10 +1,7 @@
 'use client'
 
-import UserIntroPage from "@/components/page/intro";
+import UserIntroPage from '@/components/page/intro'
 
 export default function Home() {
-
-  return (
-    <UserIntroPage />
-  )
+    return <UserIntroPage />
 }

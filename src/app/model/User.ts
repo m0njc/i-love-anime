@@ -1,4 +1,4 @@
 export interface User {
-    userName: string;
-    jobTitle: string;
+    userName: string
+    jobTitle: string
 }

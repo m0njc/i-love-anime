@@ -1,8 +1,4 @@
-import UserIntroPage from "@/components/page/intro";
+import UserIntroPage from '@/components/page/intro'
 export default function Intro() {
-
-  
-  return (
-    <UserIntroPage />
-  )
+    return <UserIntroPage />
 }

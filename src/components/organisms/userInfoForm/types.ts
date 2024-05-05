@@ -1,4 +1,4 @@
 export type UserInfoData = {
-    userName: string;
-    jobTitle: string;
-};
+    userName: string
+    jobTitle: string
+}
